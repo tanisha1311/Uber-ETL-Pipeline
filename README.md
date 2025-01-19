@@ -26,17 +26,20 @@ TLC Trip Record Data Yellow and green taxi trip records include fields capturing
 - Activated an e2-standard-4 virtual machine on Google Cloud Platform to handle data processing and execute Mage pipelines.
 - Configured the instance to ensure sufficient resources for managing large datasets and running complex transformations.
 - Installed necessary tools and libraries on the instance, including Mage, Python, and required data processing dependencies.
-
+  <img width="1210" alt="image" src="https://github.com/user-attachments/assets/976ae2b5-59f3-447e-af81-8c9535e08616" />
+  
 # Step 2
 - Uploaded the data to GCP Storage for centralized storage and seamless access.
 - Configured Mage to connect to the GCP bucket and fetch the raw data.
 - Validated the data in Mage to ensure there were no missing or corrupted files.
+  <img width="1133" alt="image" src="https://github.com/user-attachments/assets/41c4e9a5-5a72-4338-b0a4-5bbb2d8de03a" />
 
 # Step 3
 - Cleaned the data to remove duplicates, null values, and irrelevant columns.
 - Standardized data formats, such as datetime, latitude, and longitude.
 - Modeled the data into dimension tables (e.g., passenger and trip details) and fact tables (e.g., revenue and distance metrics).
 - Exported the transformed data to BigQuery in the form of a dictionary, ensuring structured and easy-to-query data.
+  <img width="1121" alt="image" src="https://github.com/user-attachments/assets/4988981f-25a1-401a-8939-a6b1f216c9bc" />
 
 # Step 4
 - Connected Mage-exported datasets to BigQuery and validated the schema.
@@ -44,11 +47,15 @@ TLC Trip Record Data Yellow and green taxi trip records include fields capturing
   - Total revenue by day or week.
   - Popular pickup and drop-off zones based on latitude and longitude.
   - Average trip distance and duration.
+<img width="1126" alt="image" src="https://github.com/user-attachments/assets/668f940a-9de1-4b5f-98f6-918c938d4c02" />
+<img width="1212" alt="image" src="https://github.com/user-attachments/assets/670291a3-2831-4488-92cc-85a12f36841a" />
 
 # Step 5
 Integrated Looker Studio with BigQuery to access the analyzed data directly.
 <img width="1226" alt="image" src="https://github.com/user-attachments/assets/0aa7d22d-6694-452c-981b-34c1cb0a3946" />
 <img width="1242" alt="image" src="https://github.com/user-attachments/assets/d24598eb-7135-4bfa-9f60-c0682dc324f7" />
 
+# Conclusion
+This project demonstrated the seamless integration of ETL processes, analysis, and visualization. Activating a Compute Instance ensured a robust environment for resource-intensive tasks. The use of Mage, BigQuery, and Looker Studio ensured data accuracy, actionable insights, and effective decision-making.
 
 
